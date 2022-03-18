@@ -1,0 +1,167 @@
+﻿<%@ master language="C#" autoeventwireup="true" inherits="AdminMaster, App_Web_quftg2pv" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Online Hotel Booking</title>
+    <style type="text/css">
+        .style3
+        {
+            width: 324px;
+        }
+        .style4
+        {
+            width: 1074px;
+            height: 350px;
+        }
+        .style13
+        {
+            width: 752px;
+            height: 110px;
+        }
+        #form1
+        {
+            height: 989px;
+        }
+        .style14
+        {
+            height: 50px;
+        }
+    </style>
+</head>
+<body background="new1/bg.jpg"">
+    <form id="form1" runat="server">
+    <div style="background-image: url('images/topbg2.png'); background-position: center top;
+        background-repeat: no-repeat; height: 830px; margin-top: -15px;">
+        <div align="center">
+            <table align="center" cellpadding="0" cellspacing="0" 
+                style="width: 1074px; font-family: Verdana; font-size: small; font-weight: bold; color: #FFFFFF;">
+                <tr>
+                    <td>
+                        <div align="center">
+                            <table align="center" cellpadding="0" cellspacing="0" style="height: 110px" width="1074">
+                                <tr>
+                                    <td class="style3">
+                                        &nbsp;
+                                        <img alt="" src="logo0.png" style="width: 307px; height: 106px" /></td>
+                                    <td>
+                                        <div align="center">
+                                            <table align="center" cellpadding="0" cellspacing="0" class="style13">
+                                                <tr>
+                                                    <td height="30">
+                                                        &nbsp;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td height="50">
+                                                        <asp:Menu ID="Menu1" runat="server" ForeColor="White" Height="30px" 
+                                                            Orientation="Horizontal" Width="746px">
+                                                            <DynamicMenuItemStyle BackColor="#592D12" ForeColor="White" Height="30px" />
+                                                            <Items>
+                                                                <asp:MenuItem Text="News" Value="New Item" NavigateUrl="~/AdminNews.aspx"></asp:MenuItem>
+                                                                <asp:MenuItem Text="Feedback Detail" Value="New Item" 
+                                                                    NavigateUrl="~/AdminFeedbackDetail.aspx"></asp:MenuItem>
+                                                                <asp:MenuItem Text="Member Detail" Value="New Item" 
+                                                                    NavigateUrl="~/AdminMemberDetail.aspx"></asp:MenuItem>
+                                                                <asp:MenuItem Text="Room Master" Value="New Item" 
+                                                                    NavigateUrl="~/AdminRoomMaster.aspx"></asp:MenuItem>
+                                                                <asp:MenuItem Text="Booking Detail" Value="New Item" 
+                                                                    NavigateUrl="~/AdminBookingDetail.aspx"></asp:MenuItem>
+                                                                <asp:MenuItem Text="Payment Detail" Value="Contact Us" 
+                                                                    NavigateUrl="~/adminpaymentinquiry.aspx"></asp:MenuItem>
+                                                                <asp:MenuItem Text="Reports" Value="Reports">
+                                                                    <asp:MenuItem NavigateUrl="~/rptfeedback.aspx" Text="Feedback Detail" 
+                                                                        Value="New Item"></asp:MenuItem>
+                                                                    <asp:MenuItem NavigateUrl="~/rptmember.aspx" Text="Member Detail" 
+                                                                        Value="New Item"></asp:MenuItem>
+                                                                    <asp:MenuItem NavigateUrl="~/rptbooking.aspx" Text="Booking Report" 
+                                                                        Value="New Item"></asp:MenuItem>
+                                                                    <asp:MenuItem NavigateUrl="~/rptroom.aspx" Text="Room Detail" Value="New Item">
+                                                                    </asp:MenuItem>
+                                                                </asp:MenuItem>
+                                                            </Items>
+                                                        </asp:Menu>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td height="30">
+                                                        Welcome&nbsp;&nbsp;
+                                                        <asp:Label ID="Label1" runat="server" style="color: #FFFF00" Text="Label"></asp:Label>
+&nbsp;&nbsp;
+                                                        <asp:LinkButton ID="LinkButton1" runat="server" style="color: #FFFFFF" 
+                                                            onclick="LinkButton1_Click">Logout</asp:LinkButton>
+&nbsp; </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div align="center">
+                                <table align="center" cellpadding="0" cellspacing="0" class="style4" 
+                                    style="border: 2px ridge #47210A; background-image: url('images/mb.jpg'); margin-top: 10px;">
+                                    <tr>
+                                        <td align="left" valign="top">
+                                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                        </asp:ContentPlaceHolder>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div align="center" style="height: 165px">
+                                <table align="center" cellpadding="0" cellspacing="0" style="height: 37px; margin-top: 10px;"
+                                    width="1074">
+                                    <tr>
+                                        <td height="138" 
+                                            
+                                            style="background-position: center top; background-image: url('images/bg-reservationnew.jpg'); background-repeat: no-repeat;">
+                                            <div align="center">
+                                                <table align="center" cellpadding="0" cellspacing="0" style="height: 116px" 
+                                                    width="1000">
+                                                    <tr>
+                                                        <td class="style14">
+                                                        <asp:Menu ID="Menu2" runat="server" ForeColor="White" Height="30px" 
+                                                            Orientation="Horizontal" Width="746px">
+                                                            <Items>
+                                                                <asp:MenuItem Text="News" Value="New Item" NavigateUrl="~/AdminNews.aspx"></asp:MenuItem>
+                                                                <asp:MenuItem Text="Feedback Detail" Value="New Item" 
+                                                                    NavigateUrl="~/AdminFeedbackDetail.aspx"></asp:MenuItem>
+                                                                <asp:MenuItem Text="Member Detail" Value="New Item" 
+                                                                    NavigateUrl="~/AdminMemberDetail.aspx"></asp:MenuItem>
+                                                                <asp:MenuItem Text="Room Master" Value="New Item" 
+                                                                    NavigateUrl="~/AdminRoomMaster.aspx"></asp:MenuItem>
+                                                                <asp:MenuItem Text="Booking Detail" Value="New Item" 
+                                                                    NavigateUrl="~/AdminBookingDetail.aspx"></asp:MenuItem>
+                                                                <asp:MenuItem Text="Payment Detail" Value="Contact Us" 
+                                                                    NavigateUrl="~/AdminPaymentDetail.aspx"></asp:MenuItem>
+                                                            </Items>
+                                                        </asp:Menu>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            C<span style="font-size: 8pt; color: rgb(255,255,255); font-family: Verdana">opyright 
+                                                            @2022 Online Hotel Booking, All Rights 
+                                                            Reserved<strong> </strong></span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span style="color: #ffff00"><span style="color: #ffffff">The Site is Created By </span>
+                                                            <strong>Bhavisha, Shivangini & Jigar</strong></span></td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <br />
+                            </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,1 @@
+var isWin = (navigator.appVersion.toLowerCase().indexOf("win") != 1) ? true : false;
